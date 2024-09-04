@@ -6,7 +6,7 @@ Desafio programa de lealtad
 
 
 # Estado del Proyecto
-Estado del Proyecto: Actualmente desarrollado
+Estado del Proyecto: Actualmente desarrollado en la carpeta docs del proyecto se encuentra colección Postman para realizar pruebas
 
 Dirección: Se han realizado pruebas funcionales
 
