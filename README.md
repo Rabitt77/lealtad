@@ -56,8 +56,6 @@ Para ver la documentación de swagger:
 
 - Coloque http://localhost:8080/swagger-ui/index.html#/ en su navegador y ejecute el punto final. (ambiente local)
 
-- <b>Yaml</b> <br>
-  > docs/am-ab-ancillary-offer-dc-swagger.yaml
 
 
 ## Autor
