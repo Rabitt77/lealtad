@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "f032ad36-73ef-4cfc-8cb1-c787366a9593",
+		"name": "PRUEBAS LEALTAD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15069913"
+	},
+	"item": [
+		{
+			"name": "RegistrarUsuario",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUsuario\":\"admin\",\r\n    \"contrasena\":\"xxx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarPuntosUsuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/obtenerPuntos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"obtenerPuntos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarPuntos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"puntos\": 200,\r\n    \"descripcion\": \"Compra en línea\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/registrarPuntos/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"registrarPuntos",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearRecompensa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Descuento en tienda premium\",\r\n    \"puntosRequeridos\": 700\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/recompensa/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"recompensa",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarRecompensas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/recompensas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"recompensas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
