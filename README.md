@@ -1,2 +1,0 @@
-# lealtad
-desafio
